@@ -4,14 +4,27 @@
     background-color: $color-azul;
     color: $color-blanco;
     font-weight: bold;
-}
-.card-body {
     padding: 20px;
-} 
+}
+
+.card-body {
+    padding: 10px;
+}
+
 .card-title {
     color: $color-azul;
 }
-.card-title{
+
+.card-title {
     text-transform: uppercase;
 }
 
+
+iframe {
+    border-radius: 20px;
+}
+
+.noticias {
+    padding: 20px 0px;
+
+}

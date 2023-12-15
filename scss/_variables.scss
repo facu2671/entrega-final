@@ -1,5 +1,13 @@
-$color-blanco:#fff;
-$color-grisOscuro:#2a2a2a;
-$color-azul:#007bff;
-$color-negro:#23242a;
-$color-negroClarito:#1c1c1c;
+/* variables */
+$color-blanco: #fff;
+$color-grisOscuro: #2a2a2a;
+$color-azul: #007bff;
+$color-negro: #23242a;
+$color-negroClarito: #1c1c1c;
+
+
+/* Mixin */
+@mixin anclas {
+    align-items: center;
+    text-align: center;
+}

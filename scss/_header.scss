@@ -1,9 +1,5 @@
 /* header */
 
-@mixin anclas{
-    align-items: center;
-    text-align: center;
-}
 
 .logo {
     width: 110px;
@@ -13,16 +9,24 @@
 nav {
     text-transform: uppercase;
     font-weight: bold;
+    height: 80px;
 }
 
 nav li {
     margin: 0px 20px;
     font-size: 15px;
-
 }
 
 ul {
     @include anclas;
-    justify-content: space-between;
 }
 
+
+a {
+    color: white !important;
+}
+
+
+.dropdown-menu {
+    background-color: $color-grisOscuro;
+}

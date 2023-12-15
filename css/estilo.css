@@ -1,9 +1,13 @@
 @charset "UTF-8";
+
+/* variables */
+/* Mixin */
 /* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 /* header */
@@ -15,6 +19,7 @@
 nav {
   text-transform: uppercase;
   font-weight: bold;
+  height: 80px;
 }
 
 nav li {
@@ -25,7 +30,14 @@ nav li {
 ul {
   align-items: center;
   text-align: center;
-  justify-content: space-between;
+}
+
+a {
+  color: white !important;
+}
+
+.dropdown-menu {
+  background-color: #2a2a2a;
 }
 
 /* footer */
@@ -97,6 +109,7 @@ footer {
   text-decoration: none;
   transition: 0.5s;
 }
+
 .menu-item-footer:hover {
   opacity: 1;
 }
@@ -119,21 +132,23 @@ footer {
 .social-link {
   height: 100%;
   width: 30px;
-  background-image: url(../img/FacebookBlanco.png);
+  background-image: url(../img/LFacebookBlanco.png);
   background-size: 70%;
   background-position: center;
   margin-right: 1rem;
   background-repeat: no-repeat;
 }
+
 .social-link:hover {
   opacity: 0.7;
 }
 
 footer .social-link:nth-of-type(2) {
-  background-image: url(../img/TwitterBlanco.png);
+  background-image: url(../img/LTwitterBlanco.png);
 }
+
 footer .social-link:nth-of-type(3) {
-  background-image: url(../img/InstagramBlanco.png);
+  background-image: url(../img/LInstagramBlanco.png);
 }
 
 /*MEDIA QUERY*/
@@ -142,6 +157,7 @@ footer .social-link:nth-of-type(3) {
     padding: 2rem;
     flex-direction: column;
   }
+
   .footer-content-container {
     width: 100%;
     padding: 2rem 0;
@@ -149,13 +165,16 @@ footer .social-link:nth-of-type(3) {
     justify-content: center;
     align-items: center;
   }
+
   .footer-content-container:nth-of-type(1) {
     align-items: flex-start;
   }
+
   .footer-content-container:nth-of-type(3) {
     border-bottom: none;
     padding-bottom: 0;
   }
+
   .footer-menus {
     width: 100%;
     display: flex;
@@ -163,23 +182,47 @@ footer .social-link:nth-of-type(3) {
     align-items: flex-start;
     border-bottom: 1px solid #2a2a2a;
   }
-  .footer-menus .footer-content-container:nth-of-type(1), .footer-menus .footer-content-container:nth-of-type(2) {
+
+  .footer-menus .footer-content-container:nth-of-type(1),
+  .footer-menus .footer-content-container:nth-of-type(2) {
     width: 45%;
     align-items: flex-start;
     border-bottom: none;
   }
 }
+
 @media (max-width: 768px) {
   iframe {
-    width: 350px;
+    width: 300px;
     height: 200px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .content-section {
     flex-direction: column;
   }
 }
+
+@media (max-width: 768px) {
+  nav {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .imgS {
+    width: 51%;
+    align-items: baseline;
+  }
+}
+
+@media (max-width: 768px) {
+  .imgC {
+    width: 90%;
+  }
+}
+
 /* Formulario Sesión */
 .formu {
   display: flex;
@@ -248,8 +291,8 @@ footer .social-link:nth-of-type(3) {
   transition: 0.5s;
 }
 
-.box form .inputBox input:valid ~ span,
-.box form .inputBox input:focus ~ span {
+.box form .inputBox input:valid~span,
+.box form .inputBox input:focus~span {
   color: #fff;
   font-size: 0.75em;
   transform: translateY(-34px);
@@ -268,8 +311,8 @@ footer .social-link:nth-of-type(3) {
   pointer-events: none;
 }
 
-.box form .inputBox input:valid ~ i,
-.box form .inputBox input:focus ~ i {
+.box form .inputBox input:valid~i,
+.box form .inputBox input:focus~i {
   height: 44px;
 }
 
@@ -308,12 +351,12 @@ footer .social-link:nth-of-type(3) {
 
 .container-3 {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 90px;
+  padding: 20px 90px;
   cursor: default;
 }
 
@@ -322,7 +365,6 @@ footer .social-link:nth-of-type(3) {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 30px 0px;
 }
 
 .content-section .card {
@@ -349,16 +391,16 @@ footer .social-link:nth-of-type(3) {
   padding: 0px 10px;
   margin-bottom: 20px;
   font-family: sans-serif;
+  text-transform: uppercase;
 }
 
 .link {
   text-decoration: none;
   display: block;
-  background-color: black;
+  background-color: #2a2a2a;
   color: #fff;
-  padding: 15px 20px;
-  margin-bottom: 10px;
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .card {
@@ -366,6 +408,7 @@ footer .social-link:nth-of-type(3) {
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   transition: all 400ms ease;
   border-radius: 10px;
+  padding: 10px 10px;
 }
 
 .card:hover {
@@ -441,8 +484,8 @@ footer .social-link:nth-of-type(3) {
   transition: 0.5s;
 }
 
-.box-2 form .inputBox-2 input:valid ~ span,
-.box-2 form .inputBox-2 input:focus ~ span {
+.box-2 form .inputBox-2 input:valid~span,
+.box-2 form .inputBox-2 input:focus~span {
   color: #fff;
   font-size: 0.75em;
   transform: translateY(-34px);
@@ -461,8 +504,8 @@ footer .social-link:nth-of-type(3) {
   pointer-events: none;
 }
 
-.box-2 form .inputBox-2 input:valid ~ i,
-.box-2 form .inputBox-2 input:focus ~ i {
+.box-2 form .inputBox-2 input:valid~i,
+.box-2 form .inputBox-2 input:focus~i {
   height: 44px;
 }
 
@@ -504,10 +547,11 @@ footer .social-link:nth-of-type(3) {
   background-color: #007bff;
   color: #fff;
   font-weight: bold;
+  padding: 20px;
 }
 
 .card-body {
-  padding: 20px;
+  padding: 10px;
 }
 
 .card-title {
@@ -516,6 +560,73 @@ footer .social-link:nth-of-type(3) {
 
 .card-title {
   text-transform: uppercase;
+}
+
+iframe {
+  border-radius: 20px;
+}
+
+.noticias {
+  padding: 20px 0px;
+}
+
+/* inicio */
+
+.imgS {
+  max-width: 100%;
+  height: auto;
+  margin: 15px 15px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.indexNoticias {
+  background: linear-gradient(135deg, #FFD700, #8A2BE2);
+}
+
+.hrIndex {
+  border-width: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.containerC {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+  max-width: 800;
+}
+
+.imgC {
+  max-width: 750px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  margin-right: 15px;
+  height: auto;
+}
+
+.textC {
+  color: #fff;
+  flex: 1;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.textC h2 {
+  font-size: 42px;
+  max-width: 100%;
+}
+
+.textC p {
+  font-size: 16px;
+  max-width: 100%;
+}
+
+.importante {
+  color: #2a2a2a;
 }
 
 /*# sourceMappingURL=estilo.css.map */
