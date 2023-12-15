@@ -43,14 +43,14 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     iframe {
         width: 300px;
         height: 200px;
     }
 }
 
-@media screen and (max-width:768px) {
+@media (max-width:1200px) {
     .content-section {
         flex-direction: column;
 
@@ -58,20 +58,20 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     nav {
         height: auto;
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 1200px) {
     .imgS {
         width: 51%;
         align-items: baseline;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .imgC {
         width: 90%;
     }
